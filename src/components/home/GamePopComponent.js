@@ -34,16 +34,19 @@ const dataGamePopuler = [
 export default class GamePopComponent extends Component {
   render() {
     return (
-      <div className="py-6">
-        <h2 className="mb-3 text-white font-bold text-3xl">Populer</h2>
+      <div className="pt-6">
+        <h2 className="mb-3 text-white font-bold text-xl md:text-3xl pl-1 md:pl-2 lg:pl-0">
+          Populer
+        </h2>
         <div className="container my-4 mx-auto">
           <div className="flex flex-wrap -mx-1 lg:-mx-4">
             {dataGamePopuler.map((pop) => (
-              <CardGame
+              <div
                 key={pop.no}
-                imgGame={pop.imgGame}
-                nameGame={pop.nameGame}
-              />
+                className="my-2 px-1 w-1/4 md:w-1/4 md:px-2 lg:my-4 lg:px-3 lg:w-1/5"
+              >
+                <CardGame imgGame={pop.imgGame} nameGame={pop.nameGame} />
+              </div>
             ))}
           </div>
         </div>
