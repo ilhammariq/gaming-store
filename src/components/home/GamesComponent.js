@@ -4,6 +4,7 @@ import CardGame from "../common/CardGame";
 import { Pagination } from "swiper";
 
 import "swiper/css/pagination";
+import { Link } from "react-router-dom";
 
 const dataGamePopuler = [
   {
@@ -48,7 +49,7 @@ const dataGamePopuler = [
   {
     no: 7,
     nameGame: "Arena of Valor",
-    imgGame: "https://ourastore.com/assets/img/1649760863AOV.png",
+    imgGame: "https://oioistore.com/assets/img/1645975080aov.jpg",
     slugGame: "arena-of-valor",
   },
   {
@@ -70,16 +71,23 @@ export default class GamesComponent extends Component {
   render() {
     return (
       <div className="py-6">
-        <h2 className="mb-3 text-white font-bold text-xl md:text-3xl lg:text-3xl pl-1 md:pl-2 lg:pl-0">
-          Games
-        </h2>
-        <div className="container my-4 mx-auto">
+        <div className="flex justify-between items-center">
+          <p className="text-white font-bold text-xl md:text-3xl lg:text-3xl pl-1 md:pl-2 lg:pl-0">
+            Games
+          </p>
+          <Link to="/cari">
+            <p className="text-white hover:text-gray-800 font-bold text-sm md:text-base lg:text-base">
+              Lihat Semua
+            </p>
+          </Link>
+        </div>
+
+        <div className="container my-3 mx-auto">
           <div className="flex flex-wrap -mx-1 lg:-mx-4 px-2 md:px-3 lg:my-4 lg:px-4">
             <Swiper
               style={{
                 "--swiper-navigation-color": "#fff",
                 "--swiper-pagination-color": "#fff",
-                paddingBottom: "50px",
               }}
               loop={true}
               pagination={{
@@ -90,7 +98,7 @@ export default class GamesComponent extends Component {
               breakpoints={{
                 640: {
                   slidesPerView: 4,
-                  spaceBetween: 20,
+                  spaceBetween: 10,
                 },
                 768: {
                   slidesPerView: 4,
@@ -102,10 +110,12 @@ export default class GamesComponent extends Component {
                 },
               }}
               modules={[Pagination]}
+              className="pb-10 pt-2 px-2"
             >
               {dataGamePopuler.map((games) => (
                 <SwiperSlide key={games.no} className="my-2">
                   <CardGame
+                    typeCard="games"
                     imgGame={games.imgGame}
                     nameGame={games.nameGame}
                     slugGame={games.slugGame}

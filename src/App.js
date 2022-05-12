@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./components/About";
 import Home from "./views/Home";
 import Order from "./views/Order";
+import FooterComponent from "./components/FooterComponent";
 export default class App extends Component {
   render() {
     return (
@@ -20,6 +21,7 @@ export default class App extends Component {
             <Home />
           </Route>
         </Switch>
+        <FooterComponent />
       </Router>
     );
   }

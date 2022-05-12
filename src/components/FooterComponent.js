@@ -24,7 +24,7 @@ export default class FooterComponent extends Component {
         </div>
 
         <div className="text-center text-white p-4">
-          <small>
+          <p>
             © 2021 Copyright:
             <a
               className="text-white ml-2"
@@ -33,7 +33,7 @@ export default class FooterComponent extends Component {
             >
               Panda Coding
             </a>
-          </small>
+          </p>
         </div>
       </footer>
     );

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import CardGame from "../common/CardGame";
-import CardGaming from "../common/CardGaming";
 
 const dataGamePopuler = [
   {
@@ -46,19 +45,15 @@ export default class GamePopComponent extends Component {
         <h2 className="mb-3 text-white font-bold text-xl md:text-3xl pl-1 md:pl-2 lg:pl-0">
           Populer
         </h2>
-        <div className="container my-4 mx-auto">
+        <div className="container my-3 mx-auto">
           <div className="flex flex-wrap -mx-1 lg:-mx-4 justify-center">
             {dataGamePopuler.map((pop) => (
               <div
                 key={pop.no}
                 className="my-2 px-1 w-1/2 md:w-1/2 md:px-2 lg:my-4 lg:px-3 lg:w-1/2"
               >
-                {/* <CardGame
-                  imgGame={pop.imgGame}
-                  nameGame={pop.nameGame}
-                  slugGame={pop.slugGame}
-                /> */}
-                <CardGaming
+                <CardGame
+                  typeCard="populer"
                   imgGame={pop.imgGame}
                   nameGame={pop.nameGame}
                   slugGame={pop.slugGame}

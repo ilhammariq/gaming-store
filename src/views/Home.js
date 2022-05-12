@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import FooterComponent from "../components/home/FooterComponent";
 import GamePopComponent from "../components/home/GamePopComponent";
 import GamesComponent from "../components/home/GamesComponent";
 import Jumbotron from "../components/home/JumbotronBannerComponent";
@@ -13,7 +12,6 @@ export default class Home extends Component {
           <GamePopComponent />
           <GamesComponent />
         </div>
-        <FooterComponent />
       </div>
     );
   }
