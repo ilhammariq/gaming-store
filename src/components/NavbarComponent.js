@@ -34,17 +34,20 @@ export default function NavbarComponent() {
               </div>
               <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="flex-shrink-0 flex items-center">
-                  <img
-                    className="block lg:hidden h-8 w-auto rounded-full"
-                    src="https://img.freepik.com/free-vector/cute-mummy-gaming-cartoon-illustration-halloween-gaming-icon-concept_138676-1889.jpg?t=st=1652080509~exp=1652081109~hmac=ba3d9b3e3a5187adfb1bb4b9f9d6f5136592d8d2bab28bcad930e6eee144e9f7&w=826"
-                    alt="Workflow"
-                  />
-                  <img
-                    className="hidden lg:block h-8 w-auto rounded-full"
-                    src="https://img.freepik.com/free-vector/cute-mummy-gaming-cartoon-illustration-halloween-gaming-icon-concept_138676-1889.jpg?t=st=1652080509~exp=1652081109~hmac=ba3d9b3e3a5187adfb1bb4b9f9d6f5136592d8d2bab28bcad930e6eee144e9f7&w=826"
-                    alt="Workflow"
-                  />
-                  <h2 className="ml-3 text-xl font-bold text-white">ICON</h2>
+                  <Link to="/">
+                    <img
+                      className="block lg:hidden h-8 w-auto rounded-full"
+                      src="https://img.freepik.com/free-vector/cute-mummy-gaming-cartoon-illustration-halloween-gaming-icon-concept_138676-1889.jpg?t=st=1652080509~exp=1652081109~hmac=ba3d9b3e3a5187adfb1bb4b9f9d6f5136592d8d2bab28bcad930e6eee144e9f7&w=826"
+                      alt="Workflow"
+                    />
+                  </Link>
+                  <Link to="/">
+                    <img
+                      className="hidden lg:block h-8 w-auto rounded-full"
+                      src="https://img.freepik.com/free-vector/cute-mummy-gaming-cartoon-illustration-halloween-gaming-icon-concept_138676-1889.jpg?t=st=1652080509~exp=1652081109~hmac=ba3d9b3e3a5187adfb1bb4b9f9d6f5136592d8d2bab28bcad930e6eee144e9f7&w=826"
+                      alt="Workflow"
+                    />
+                  </Link>
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
