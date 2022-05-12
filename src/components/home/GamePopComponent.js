@@ -1,39 +1,42 @@
 import React, { Component } from "react";
 import CardGame from "../common/CardGame";
+import CardGaming from "../common/CardGaming";
 
 const dataGamePopuler = [
   {
     no: 1,
     nameGame: "Mobile Legend",
-    imgGame:
-      "https://play-lh.googleusercontent.com/ha1vofCWS5lFhVe0gabwIetwjT4fUY5d6iDOP10KWRwnXci8lWI3ClxrqjoRuPZidg=s180-rw",
+    imgGame: "https://wallpapercave.com/wp/wp4400888.png",
     slugGame: "mobile-legend",
+    promotionGame: "Diskon Hingga 22% OFF!",
   },
   {
     no: 2,
     nameGame: "Free Fire",
-    imgGame:
-      "https://play-lh.googleusercontent.com/cw0x8EiZYDwL6x4XKKXDmfQsFDYKO4Q6xIfiyPOvgIjHCpe41QAM_rl4y0dLu0SJOdM=s180-rw",
+    imgGame: "https://wallpapercave.com/wp/wp3144352.jpg",
     slugGame: "free-fire",
+    promotionGame: "Manfaat eksklusif！",
   },
   {
     no: 3,
     nameGame: "Genshin Impact",
-    imgGame: "https://mobilegamestore.id/assets/img/1648228117genshin.jpg",
+    imgGame: "https://wallpapercave.com/wp/wp9330474.jpg",
     slugGame: "genshin-impact",
+    promotionGame: "Penawaran hebat. Bonus melimpah.",
   },
   {
     no: 4,
     nameGame: "PUBG Mobile",
-    imgGame: "https://mobilegamestore.id/assets/img/1648439208pubgm .jpg",
+    imgGame: "https://wallpapercave.com/wp/wp7795888.jpg",
     slugGame: "pubg-mobile",
+    promotionGame: "Extra UC hingga 35%!",
   },
-  {
-    no: 5,
-    nameGame: "LOL Wild Rift",
-    imgGame: "https://mobilegamestore.id/assets/img/1648398643lol logo.png",
-    slugGame: "lol-wild-rift",
-  },
+  // {
+  //   no: 5,
+  //   nameGame: "LOL Wild Rift",
+  //   imgGame: "https://mobilegamestore.id/assets/img/1648398643lol logo.png",
+  //   slugGame: "lol-wild-rift",
+  // },
 ];
 
 export default class GamePopComponent extends Component {
@@ -48,12 +51,18 @@ export default class GamePopComponent extends Component {
             {dataGamePopuler.map((pop) => (
               <div
                 key={pop.no}
-                className="my-2 h-100 px-1 w-1/4 md:w-1/4 md:px-2 lg:my-4 lg:px-3 lg:w-1/5"
+                className="my-2 px-1 w-1/2 md:w-1/2 md:px-2 lg:my-4 lg:px-3 lg:w-1/2"
               >
-                <CardGame
+                {/* <CardGame
                   imgGame={pop.imgGame}
                   nameGame={pop.nameGame}
                   slugGame={pop.slugGame}
+                /> */}
+                <CardGaming
+                  imgGame={pop.imgGame}
+                  nameGame={pop.nameGame}
+                  slugGame={pop.slugGame}
+                  promotionGame={pop.promotionGame}
                 />
               </div>
             ))}

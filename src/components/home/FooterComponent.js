@@ -1,12 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { Component } from "react";
-import {
-  faInstagram,
-  faWhatsapp,
-  faFacebook,
-  faTiktok,
-} from "@fortawesome/free-brands-svg-icons";
-
+import { FaInstagram, FaWhatsapp, FaFacebook, FaTiktok } from "react-icons/fa";
 export default class FooterComponent extends Component {
   render() {
     return (
@@ -14,17 +7,17 @@ export default class FooterComponent extends Component {
         <div className="pt-9">
           <div className="flex justify-center mb-6">
             <div className="grid grid-cols-4 text-2xl justify-items-center items-center gap-10">
-              <a href="#!">
-                <FontAwesomeIcon icon={faInstagram} />
+              <a href="#!" target="_blank">
+                <FaInstagram />
               </a>
-              <a href="#!">
-                <FontAwesomeIcon icon={faWhatsapp} />
+              <a href="#!" target="_blank">
+                <FaWhatsapp />
               </a>
-              <a href="#!">
-                <FontAwesomeIcon icon={faFacebook} />
+              <a href="#!" target="_blank">
+                <FaFacebook />
               </a>
-              <a href="#!">
-                <FontAwesomeIcon icon={faTiktok} />
+              <a href="#!" target="_blank">
+                <FaTiktok />
               </a>
             </div>
           </div>
